@@ -69,7 +69,7 @@ public class ZeroWebappsecurityTesti {
     public void currencyDropDownMenusundenEurozoneUSecer() {
         zeroPage.currencyDropdown.click();
         Select select = new Select(zeroPage.currencyDropdown);
-        select.selectByVisibleText("Eurozone (euro)");
+        select.selectByValue(ConfigReader.getProperty("zeroSecilenCurrencyValue"));
     }
 
 
