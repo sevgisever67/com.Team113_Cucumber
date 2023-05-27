@@ -80,25 +80,24 @@ public class ZeroWebappsecurityTesti {
 
     @Then("Soft assert kullanarak DropDown listesinin su secenekleri oldugunu test edin")
     public void softAssertKullanarakDropDownListesininSuSecenekleriOldugunuTestEdin() {
-        
-
-        List<String> expectedList =new ArrayList<>(Arrays.asList("Select One", "Australia (dollar)",
-                "Canada (dollar)","Switzerland (franc)","China (yuan)","Denmark (krone)",
-                "Eurozone (euro)","Great Britain (pound)","Hong Kong (dollar)",
-                "Japan (yen)","Mexico (peso)","Norway (krone)","New Zealand (dollar)",
-                "Sweden (krona)","Singapore (dollar)","Thailand (baht)"));
 
 
-        List<String> actualDropDownStringList=new ArrayList<>();
-        for (WebElement eachWebElemnt:zeroPage.dropdownList) {
+        List<String> expectedList = new ArrayList<>(Arrays.asList("Select One", "Australia (dollar)",
+                "Canada (dollar)", "Switzerland (franc)", "China (yuan)", "Denmark (krone)",
+                "Eurozone (euro)", "Great Britain (pound)", "Hong Kong (dollar)",
+                "Japan (yen)", "Mexico (peso)", "Norway (krone)", "New Zealand (dollar)",
+                "Sweden (krona)", "Singapore (dollar)", "Thailand (baht)"));
+
+
+        List<String> actualDropDownStringList = new ArrayList<>();
+        for (WebElement eachWebElemnt : zeroPage.dropdownList) {
             actualDropDownStringList.add(eachWebElemnt.getText());
         }
         System.out.println(actualDropDownStringList.size());
 
 
-        Assert.assertEquals(expectedList,actualDropDownStringList);
+        Assert.assertEquals(expectedList, actualDropDownStringList);
     }
-    
-    
-    
+
+
 }
