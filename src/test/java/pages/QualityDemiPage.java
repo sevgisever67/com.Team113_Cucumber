@@ -31,6 +31,10 @@ public class QualityDemiPage {
         @FindBy(xpath = "//a[text()='Accept']")
         public WebElement cerezkutusuElementi;
 
+
+
+
+
     }
 
 

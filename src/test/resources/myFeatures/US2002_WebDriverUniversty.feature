@@ -1,4 +1,5 @@
 Feature: US2002 Webdriver Universty Testi
+
   Scenario: popUptesti
     Given Kullanici "WevbdriveuniverstyURL" sayfasına gider
     Then Login Portal a kadar asagi iner

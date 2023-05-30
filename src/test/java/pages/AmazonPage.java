@@ -50,6 +50,14 @@ public class AmazonPage {
     public WebElement giftCard;
 
 
+    @FindBy(xpath = "(//span[@class='a-size-base-plus a-color-base a-text-normal'])[1]")
+    public WebElement ilkUrunelementi;
+
+
+    @FindBy(id ="productTitle")
+    public WebElement ilkUrunIsimElementi;
+
+
 
 }
 

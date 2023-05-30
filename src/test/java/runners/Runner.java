@@ -1,16 +1,22 @@
 package runners;
 
+import com.sun.source.tree.Tree;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
+import org.apache.commons.io.filefilter.TrueFileFilter;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin = {"html:target/cucumber-reports.html",
+               // "json:target/json-reports/cucumber.json",
+               // "junit:target/xml-report/cucumber.xml"
+        },
         features = "src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@regression and @smoke",
+        tags = "@qd",
 
-        dryRun = false
+        dryRun =false
 )
 
 public class Runner {
