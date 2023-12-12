@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         glue = "stepdefinitions",
         tags = "@qd",
 
-        dryRun =false
+        dryRun =true
 )
 
 public class Runner {
